@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Trivia!!!</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- JavaScript -->
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css"></link>
+
+</head>
+
+<body>
+
+    <!-- Main Layout -->
+    <main>
+        <div class="container" id="mainContent">
+            <h1>March Madness!!!</h1>
+            <hr>
+            <br>
+            <h2 id="hiddenTimer" hidden>
+                Time Remaining:
+                <span id="timer"></span>
+            </h2>
+            <div class="card bg-info text-secondary text-center" id="triviaQuestions" hidden>
+                <h3 class="card-header bg-info text-secondary">Trivia Questions</h3>
+                <divclass="card-body">
+                    <form>
+                        <div class="form-group">
+                            <h4>What is the name of the only team who was a 16-seed who managed to upset a 1-seed?</h4>
+                                <select id="sixteenSeed">
+                                    <option value="UNCA">University of North Carolina Asheville</option>
+                                    <option value="UMBC">University of Maryland, Baltimore County</option>
+                                    <option value="WKU">Western Kentucky University</option>
+                                    <option value="MTSU">Middle Tennessee State University</option>
+                                </select>
+                        </div>
+                        <div class="form-group">
+                            <h4>What is the lowest seed to ever win the NCAA tournament?</h4>
+                                <select id="lowestSeed">
+                                    <option value="4">4 seed</option>
+                                    <option value="8">8 seed</option>
+                                    <option value="11">11 seed</option>
+                                    <option value="14">14 seed</option>
+                                </select>
+                        </div>
+                        <div class="form-group">
+                            <h4>What is the only year that had all four 1-seeds make it to the Final Four?</h4>
+                            <select id="oneSeeds">
+                                <option value="2012">2012</option>
+                                <option value="2008">2008</option>
+                                <option value="2000">2000</option>
+                                <option value="1996">1996</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <h4>In what year did the first NCAA tournament occur?</h4>
+                            <select id="firstTournament">
+                                <option value="1911">1911</option>
+                                <option value="1918">1918</option>
+                                <option value="1924">1924</option>
+                                <option value="1939">1939</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <h4>Who do you want to win this year's tournament?</h4>
+                                
+                            <select id="goDores">
+                                <option value="Vandy">Vanderbilt University</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-warning" id="submit">Submit</button>
+                    </form>
+                    <br>
+                </div>
+                <br>
+                <button class="btn btn-warning" id="start">Start Game</button>
+            </div>
+        </div>
+
+    </main>
+    <!-- Main Layout -->
